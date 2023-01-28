@@ -1,13 +1,16 @@
+
 <!DOCTYPE html>
+
 <html lang="en,pt">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <script src="./js/main.js"></script>
+       
+     
+     
       <!-- site metas -->
       <title>Arcade World</title>
       <meta name="keywords" content="">
@@ -50,12 +53,12 @@
                         <li class="nav-item">
                            <a class="nav-link" href="sobre.html">Sobre</a>
                         </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="servicos.html">Servicos</a>
-                        </li>
+                     </li>
                         <li class="nav-item">
                            <a class="nav-link " href="contactos.html">Contactos</a>
                         </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="login.html">Login</a>
                      </ul>
                   </div>
                </nav>
@@ -66,35 +69,40 @@
                   <ul>
                      <li class="active"><a href="index.html">Home</a></li>
                      <li><a href="sobre.html">Sobre</a></li>
-                     <li><a href="servicos.html">Servicos</a></li>
                      <li><a href="contactos.html">Contactos</a></li>
+                     <li><a href="login.html">Login</a></li>
+
                   </ul>
                </div>
             </div>
          </div>
          <!-- banner section start -->
+
+
+
+
          <div class="banner_section layout_padding">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
                   <div class="carousel-item active">
                      <div class="container">
                         <h1 class="banner_taital">Arcade games</h1>
-                        <p class="banner_text">Este site será sobre jogos arcade</p>
-                        <div class="read_bt"><a href="#">Clica aqui e vê os jogos</a></div>
+                        <p class="banner_text">Este site será sobre jogos arcade e sobre a sua história bem como o ranking </p>
+                      
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="container">
                         <h1 class="banner_taital">Arcade games</h1>
                         <p class="banner_text">Este site será sobre jogos arcade</p>
-                        <div class="read_bt"><a href="#">Clica aqui e vê os jogos</a></div>
+                       
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="container">
                         <h1 class="banner_taital">Arcade games</h1>
                         <p class="banner_text">Este site será sobre jogos arcade</p>
-                        <div class="read_bt"><a href="#">Clica aqui e vê os jogos</a></div>
+                       
                      </div>
                   </div>
                </div>
@@ -106,21 +114,27 @@
       <!-- services section start -->
       <div class="services_section layout_padding">
          <div class="container">
-            <h1 class="services_taital">Serviços</h1>
-            <p class="services_text">Aqui nesta aba representamos os serviços que temos no nosso site, em que estes se dividem por géneros e pacotes de jogos e história</p>
+            <h1 class="services_taital">Categorias de Jogos Arcade</h1>
+            <p class="services_text">Aqui neste setor apresentamos as 3 categorias de jogos arcade em que estão colocados 6 jogos e a sua história!</p>
             <div class="services_section_2">
                <div class="row">
                   <div class="col-md-4">
+
+
+
                      <div><img src="images/jogoaventura.png" class="services_img"></div>
-                     <div class="btn_main"><a href="#">Aventura</a></div>
+
+
+                     <div class="btn_main" ><a href="listajogosPorCategoria.php?id_categoria=1">Aventura</a></div>
+                     
                   </div>
                   <div class="col-md-4">
                      <div><img src="images/shootemup.png" class="services_img"></div>
-                     <div class="btn_main active"><a href="#">Shoot em up</a></div>
+                     <div class="btn_main "onclick="gotoAventura()"><a href= "listajogosPorCategoria.php?id_categoria=3">Shoot em up</a></div>
                   </div>
                   <div class="col-md-4">
                      <div><img src="images/estrategiajogo.png" class="services_img"></div>
-                     <div class="btn_main"><a href="#">Estratégia</a></div>
+                     <div class="btn_main "onclick="gotoAventura()"><a href= "listajogosPorCategoria.php?id_categoria=2">Estratégia</a></div>
                   </div>
                </div>
             </div>
@@ -135,7 +149,7 @@
                   <div class="about_taital_main">
                      <h1 class="about_taital">Sobre nós</h1>
                      <p class="about_text">Este site foi criado por um estudante em que teve como objetivo realizar o projeto a uma disciplina da sua universidade, pelo que, teve como base inúmeros sites antigos que visitava, sendo estes de jogos arcade e para tal, decidiu e decidi criar algo que me mostrasse o jogo e também mostrasse um pouco da história do que foi escolhido. </p>
-                     <div class="readmore_bt"><a href="#">Leia Mais</a></div>
+                    
                   </div>
                </div>
                <div class="col-md-6 padding_right_0">
@@ -152,9 +166,9 @@
             <div class="client_section_2">
                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
-                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+               
+            
                   </ol>
                   <div class="carousel-inner">
                      <div class="carousel-item active">
@@ -174,36 +188,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="carousel-item">
-                        <div class="client_main">
-                           <div class="box_left">
-                              <p class="lorem_text">Este site é simplesmente algo de abismal, visto que , consegui aproveitar muita da minha infância ao dar scroll down por esta página. Obrigado!</p>
-                           </div>
-                           <div class="box_right">
-                              <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/tubaraovoador.jpg"></div>
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
-                              </div>
-                              <div class="client_taital_right">
-                                 <h4 class="client_name">Tubarão Voador</h4>
-                                 <p class="customer_text">cliente</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="client_main">
-                           <div class="box_left">
-                              <p class="lorem_text">Consegui recuperar memórias que em mim já estavam a desaparecer dos meus tempos de puto, obrigado!</p>
-                           </div>
-                           <div class="box_right">
-                              <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/elcabritondelamuerte.jpg"></div>
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
-                              </div>
-                              <div class="client_taital_right">
-                                 <h4 class="client_name">El Cabrito de la muerte</h4>
-                                 <p class="customer_text">cliente</p>
+                     
                               </div>
                            </div>
                         </div>
@@ -219,18 +204,14 @@
          <div class="container">
             <h1 class="choose_taital">Escolha-nos, vivencie, recorde-se !</h1>
             <p class="choose_text">Ao visitar este site queremos que vivencie os jogos, que se recorde dos sentimentos nostálgicos que passou quando era mais jovem, e se for a primeira vez, que venha para aproveitar tudo o que temos para lhe oferecer. </p>
-            <div class="read_bt_1"><a href="#">Leia Mais</a></div>
-            
+                     
          </div>
       </div>
       <!-- choose section end -->
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
-            <div class="input_btn_main">
-               <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
-               <div class="subscribe_bt"><a href="#">Subscreva</a></div>
-            </div>
+      
             <div class="location_main">
                <div class="call_text"><img src="images/call-icon.png"></div>
                <div class="call_text"><a href="#">Em caso de dúvidas contacte</a></div>

@@ -1,15 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<?php
+include('php/config.php');
+
+
+
+
+
+
+
+
+
+?>
+
+<html lang="en,pt">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <script src="./php/jpg"></script>
+       
+     
+     
       <!-- site metas -->
-      <title>Sobre</title>
+      <title>Arcade World</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -33,6 +47,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
    <body>
+
       <!-- header section start -->
       <div class="header_section">
          <div class="header_main">
@@ -50,13 +65,14 @@
                         <li class="nav-item">
                            <a class="nav-link" href="sobre.html">Sobre</a>
                         </li>
-                                  
+            
+                    
                         <li class="nav-item">
                            <a class="nav-link " href="contactos.html">Contactos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link " href="login.html">Login</a>
-                        </li>
+                            <a class="nav-link " href="login.html">Login</a>
+                         </li>
                      </ul>
                   </div>
                </nav>
@@ -67,56 +83,59 @@
                   <ul>
                      <li class="active"><a href="index.html">Home</a></li>
                      <li><a href="sobre.html">Sobre</a></li>
+                 
                      <li><a href="contactos.html">Contactos</a></li>
                      <li><a href="login.html">Login</a></li>
                   </ul>
                </div>
+
+
+
+               <div class="banner_section layout_padding">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                   <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <h1 class="banner_taital">JOGOS</h1>
+                            <!-- CRIAR A LISTA DE JOGOS-->
+                        <div class="container">
+                           <div class="grid">
+                              
+                              <a href="ya/php/jogos.php">
+                                 <button class="zork">Zork</button>
+                                 <div class="grid-item"></div> <button class="game-button">Zork</button>
+                                 <a href="jogos.php?jogo_selecionado=Zork">Zork</a>
+
+
+
+                               </a>
+
+                              <div class="grid-item"><button class="game-button">ADVENTURE</button></div>
+                              <div class="grid-item"><button class="game-button">THE LEGEND OF ZELDA</button></div>
+                              <div class="grid-item"><button class="game-button">INDIANA JONES</button></div>
+                              <div class="grid-item"><button class="game-button">STAR CONTROL</button></div>
+                              <div class="grid-item"><button class="game-button">DAY OF THE TENTACLE</button></div>
+                              <div class="grid-item"><button class="game-button">SPACE</button></div>
+                              <div class="grid-item"><button class="game-button">MISSILE COMMAND</button></div>
+                              <div class="grid-item"><button class="game-button">IKARUGA</button></div>
+                              <div class="grid-item"><button class="game-button">MUSHIHIMESAMA</button></div>
+                              <div class="grid-item"><button class="game-button">SINEMORA</button></div>
+                              <div class="grid-item"><button class="game-button">ARCHON</button></div>
+                              <div class="grid-item"><button class="game-button">OREGON</button></div>
+                              <div class="grid-item"><button class="game-button">CIVILIZATION</button></div>
+                              <div class="grid-item"><button class="game-button">TETRIS</button></div>
+                              <div class="grid-item"><button class="game-button">COMPANY OF HEROES</button></div>
+                              <div class="grid-item"><button class="game-button">MARIO</button></div>
+                           </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+               </div>
             </div>
          </div>
-      </div>
-      <!-- header section end -->
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-        <div class="container">
-          <h1 class="contact_taital">Peça um feedback vindo  da nossa parte</h1>
-          <div class="email_text">
-             <div class="form-group">
-                <input type="text" class="email-bt" placeholder="Nome" name="Email">
-             </div>
-             <div class="form-group">
-                <input type="text" class="email-bt" placeholder="Nº telefone" name="Email">
-             </div>
-             <div class="form-group">
-                <input type="text" class="email-bt" placeholder="Email" name="Email">
-             </div>
-             <div class="form-group">
-                <textarea class="massage-bt" placeholder="Mensagem" rows="5" id="comment" name="Mensagem"></textarea>
-             </div>
-             <div class="send_btn"><a href="#">Envie</a></div>
-          </div>
-        </div>
-      </div>
-      <!-- contact section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-          
-            <div class="location_main">
-               <div class="call_text"><img src="images/call-icon.png"></div>
-               <div class="call_text"><a href="#">Em caso de dúvidas contacte</a></div>
-               <div class="call_text"><img src="images/mail-icon.png"></div>
-               <div class="call_text"><a href="#">jogosarcadeprogramação@gmail.com</a></div>
-            </div>
-            <div class="social_icon">
-               <ul>
-                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-     
+      </div>                
    </body>
 </html>
+             
+
+

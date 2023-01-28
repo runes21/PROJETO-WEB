@@ -1,15 +1,24 @@
+
+<?php
+include('php/config.php');
+
+?>
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en,pt">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <script src="./js/main.js"></script>
+       
+     
+     
       <!-- site metas -->
-      <title>Sobre</title>
+      <title>Arcade World</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -50,73 +59,92 @@
                         <li class="nav-item">
                            <a class="nav-link" href="sobre.html">Sobre</a>
                         </li>
-                                  
+                                           
                         <li class="nav-item">
                            <a class="nav-link " href="contactos.html">Contactos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link " href="login.html">Login</a>
-                        </li>
+                            <a class="nav-link " href="login.html">Login</a>
+                         </li>
                      </ul>
                   </div>
                </nav>
             </div>
+
+
+
             <div class="container-fluid">
                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
                <div class="menu_main">
                   <ul>
                      <li class="active"><a href="index.html">Home</a></li>
                      <li><a href="sobre.html">Sobre</a></li>
+                 
                      <li><a href="contactos.html">Contactos</a></li>
                      <li><a href="login.html">Login</a></li>
                   </ul>
                </div>
-            </div>
+
+
+            
+               <?php
+                                
+                                $id_jogo = $_GET['id_jogo'];
+
+
+            
+
+                                $sql = "SELECT * FROM " . $SETTINGS["jogos"] . " WHERE `id` = $id_jogo ";
+
+
+                                
+                         
+                                
+                                $result=   $mysqli->query($sql);
+
+
+                                
+                                $jogo_info = $result->fetch_array();
+
+
+
+                                
+
+                                ?>
+
+
+
+
+               <div class="client_section layout_padding">
+                <div class="container">
+                   <h1 class="client_taital"><?php echo($jogo_info['nome']); ?> </h1>
+                   <div class="client_section_2">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                         <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                         
+                         </ol>
+
+
+
+
+                         <div class="carousel-inner">
+                            <div class="carousel-item active">
+                               <div class="client_main">
+                                  <div class="box_left">
+                                     <p class="lorem_text"><?php echo($jogo_info['descricao']); ?> </p>
+                                  </div>
+                                  <div class="box_right">
+                                     <div class="client_taital_left">
+                                        <div class="client_img"><img src="images/<?php echo($jogo_info['imagens']); ?> "></div>
+                                       
+                                     </div>
+                                     <div class="client_taital_right">
+                                        <h4 class="client_name"><?php echo($jogo_info['nome']); ?> </h4>
+                                     
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            
          </div>
-      </div>
-      <!-- header section end -->
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-        <div class="container">
-          <h1 class="contact_taital">Peça um feedback vindo  da nossa parte</h1>
-          <div class="email_text">
-             <div class="form-group">
-                <input type="text" class="email-bt" placeholder="Nome" name="Email">
-             </div>
-             <div class="form-group">
-                <input type="text" class="email-bt" placeholder="Nº telefone" name="Email">
-             </div>
-             <div class="form-group">
-                <input type="text" class="email-bt" placeholder="Email" name="Email">
-             </div>
-             <div class="form-group">
-                <textarea class="massage-bt" placeholder="Mensagem" rows="5" id="comment" name="Mensagem"></textarea>
-             </div>
-             <div class="send_btn"><a href="#">Envie</a></div>
-          </div>
-        </div>
-      </div>
-      <!-- contact section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-          
-            <div class="location_main">
-               <div class="call_text"><img src="images/call-icon.png"></div>
-               <div class="call_text"><a href="#">Em caso de dúvidas contacte</a></div>
-               <div class="call_text"><img src="images/mail-icon.png"></div>
-               <div class="call_text"><a href="#">jogosarcadeprogramação@gmail.com</a></div>
-            </div>
-            <div class="social_icon">
-               <ul>
-                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-     
-   </body>
-</html>
